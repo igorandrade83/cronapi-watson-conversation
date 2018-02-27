@@ -6,13 +6,10 @@ import cronapi.CronapiMetaData;
 
 import java.util.Map;
 
-@CronapiMetaData(categoryName = "Watson Conversation", categoryTags = {"Watson", "Conversation"})
+@CronapiMetaData
 public final class ConversationOperations {
 
-  @CronapiMetaData(
-      name = "{{createWorkspaceName}}",
-      description = "{{createWorkspaceDescription}}"
-  )
+  @CronapiMetaData
   public static Workspace createWorkspace(String versionDate, String username, String password, String endPoint,
                                           Map<String, String> headers, CreateWorkspaceOptions options) {
     Conversation service = new Conversation(versionDate);
@@ -23,10 +20,7 @@ public final class ConversationOperations {
     return service.createWorkspace(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{deleteWorkspaceName}}",
-      description = "{{deleteWorkspaceDescription}}"
-  )
+  @CronapiMetaData
   public static void deleteWorkspace(String versionDate, String username, String password, String endPoint,
                                      Map<String, String> headers, DeleteWorkspaceOptions options) {
     Conversation service = new Conversation(versionDate);
@@ -37,10 +31,7 @@ public final class ConversationOperations {
     service.deleteWorkspace(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{getWorkspaceName}}",
-      description = "{{getWorkspaceDescription}}"
-  )
+  @CronapiMetaData
   public static WorkspaceExport getWorkspace(String versionDate, String username, String password, String endPoint,
                                              Map<String, String> headers, GetWorkspaceOptions options) {
     Conversation service = new Conversation(versionDate);
@@ -51,10 +42,7 @@ public final class ConversationOperations {
     return service.getWorkspace(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{listWorkspacesName}}",
-      description = "{{listWorkspacesDescription}}"
-  )
+  @CronapiMetaData
   public static WorkspaceCollection listWorkspaces(String versionDate, String username, String password, String endPoint,
                                                    Map<String, String> headers, ListWorkspacesOptions options) {
     Conversation service = new Conversation(versionDate);
@@ -65,10 +53,7 @@ public final class ConversationOperations {
     return service.listWorkspaces(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{updateWorkspaceName}}",
-      description = "{{updateWorkspaceDescription}}"
-  )
+  @CronapiMetaData
   public static Workspace updateWorkspace(String versionDate, String username, String password, String endPoint,
                                           Map<String, String> headers, UpdateWorkspaceOptions options) {
     Conversation service = new Conversation(versionDate);
@@ -79,10 +64,7 @@ public final class ConversationOperations {
     return service.updateWorkspace(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{messageName}}",
-      description = "{{messageDescription}}"
-  )
+  @CronapiMetaData
   public static MessageResponse message(String versionDate, String username, String password, String endPoint,
                                         Map<String, String> headers, MessageOptions options) {
     Conversation service = new Conversation(versionDate);
@@ -93,10 +75,7 @@ public final class ConversationOperations {
     return service.message(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{createIntentName}}",
-      description = "{{createIntentDescription}}"
-  )
+  @CronapiMetaData
   public static Intent createIntent(String versionDate, String username, String password, String endPoint,
                                     Map<String, String> headers, CreateIntentOptions options) {
     Conversation service = new Conversation(versionDate);
@@ -107,10 +86,7 @@ public final class ConversationOperations {
     return service.createIntent(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{deleteIntentName}}",
-      description = "{{deleteIntentDescription}}"
-  )
+  @CronapiMetaData
   public static Void deleteIntent(String versionDate, String username, String password, String endPoint,
                                   Map<String, String> headers, DeleteIntentOptions options) {
     Conversation service = new Conversation(versionDate);
@@ -121,10 +97,7 @@ public final class ConversationOperations {
     return service.deleteIntent(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{getIntentName}}",
-      description = "{{getIntentDescription}}"
-  )
+  @CronapiMetaData
   public static IntentExport getIntent(String versionDate, String username, String password, String endPoint,
                                        Map<String, String> headers, GetIntentOptions options) {
     Conversation service = new Conversation(versionDate);
@@ -135,10 +108,7 @@ public final class ConversationOperations {
     return service.getIntent(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{listIntentsName}}",
-      description = "{{listIntentsDescription}}"
-  )
+  @CronapiMetaData
   public static IntentCollection listIntents(String versionDate, String username, String password, String endPoint,
                                              Map<String, String> headers, ListIntentsOptions options) {
     Conversation service = new Conversation(versionDate);
@@ -149,10 +119,7 @@ public final class ConversationOperations {
     return service.listIntents(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{updateIntentName}}",
-      description = "{{updateIntentDescription}}"
-  )
+  @CronapiMetaData
   public static Intent updateIntent(String versionDate, String username, String password, String endPoint,
                                     Map<String, String> headers, UpdateIntentOptions options) {
     Conversation service = new Conversation(versionDate);
@@ -163,10 +130,7 @@ public final class ConversationOperations {
     return service.updateIntent(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{createExampleName}}",
-      description = "{{createExampleDescription}}"
-  )
+  @CronapiMetaData
   public static Example createExample(String versionDate, String username, String password, String endPoint,
                                       Map<String, String> headers, CreateExampleOptions options) {
     Conversation service = new Conversation(versionDate);
@@ -177,10 +141,7 @@ public final class ConversationOperations {
     return service.createExample(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{deleteExampleName}}",
-      description = "{{deleteExampleDescription}}"
-  )
+  @CronapiMetaData
   public static Void deleteExample(String versionDate, String username, String password, String endPoint,
                                    Map<String, String> headers, DeleteExampleOptions options) {
     Conversation service = new Conversation(versionDate);
@@ -191,10 +152,7 @@ public final class ConversationOperations {
     return service.deleteExample(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{getExampleName}}",
-      description = "{{getExampleDescription}}"
-  )
+  @CronapiMetaData
   public static Example getExample(String versionDate, String username, String password, String endPoint,
                                    Map<String, String> headers, GetExampleOptions options) {
     Conversation service = new Conversation(versionDate);
@@ -205,10 +163,7 @@ public final class ConversationOperations {
     return service.getExample(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{listExamplesName}}",
-      description = "{{listExamplesDescription}}"
-  )
+  @CronapiMetaData
   public static ExampleCollection listExamples(String versionDate, String username, String password, String endPoint,
                                                Map<String, String> headers, ListExamplesOptions options) {
     Conversation service = new Conversation(versionDate);
@@ -219,10 +174,7 @@ public final class ConversationOperations {
     return service.listExamples(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{updateExampleName}}",
-      description = "{{updateExampleDescription}}"
-  )
+  @CronapiMetaData
   public static Example updateExample(String versionDate, String username, String password, String endPoint,
                                       Map<String, String> headers, UpdateExampleOptions options) {
     Conversation service = new Conversation(versionDate);
@@ -233,10 +185,7 @@ public final class ConversationOperations {
     return service.updateExample(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{createEntityName}}",
-      description = "{{createEntityDescription}}"
-  )
+  @CronapiMetaData
   public static Entity createEntity(String versionDate, String username, String password, String endPoint,
                                     Map<String, String> headers, CreateEntityOptions options) {
     Conversation service = new Conversation(versionDate);
@@ -247,10 +196,7 @@ public final class ConversationOperations {
     return service.createEntity(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{deleteEntityName}}",
-      description = "{{deleteEntityDescription}}"
-  )
+  @CronapiMetaData
   public static void deleteEntity(String versionDate, String username, String password, String endPoint,
                                   Map<String, String> headers, DeleteEntityOptions options) {
     Conversation service = new Conversation(versionDate);
@@ -261,10 +207,7 @@ public final class ConversationOperations {
     service.deleteEntity(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{getEntityName}}",
-      description = "{{getEntityDescription}}"
-  )
+  @CronapiMetaData
   public static EntityExport getEntity(String versionDate, String username, String password, String endPoint,
                                        Map<String, String> headers, GetEntityOptions options) {
     Conversation service = new Conversation(versionDate);
@@ -275,10 +218,7 @@ public final class ConversationOperations {
     return service.getEntity(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{listEntitiesName}}",
-      description = "{{listEntitiesDescription}}"
-  )
+  @CronapiMetaData
   public static EntityCollection listEntities(String versionDate, String username, String password, String endPoint,
                                               Map<String, String> headers, ListEntitiesOptions options) {
     Conversation service = new Conversation(versionDate);
@@ -289,10 +229,7 @@ public final class ConversationOperations {
     return service.listEntities(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{updateEntityName}}",
-      description = "{{updateEntityDescription}}"
-  )
+  @CronapiMetaData
   public static Entity updateEntity(String versionDate, String username, String password, String endPoint,
                                     Map<String, String> headers, UpdateEntityOptions options) {
     Conversation service = new Conversation(versionDate);
@@ -303,10 +240,7 @@ public final class ConversationOperations {
     return service.updateEntity(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{createValueName}}",
-      description = "{{createValueDescription}}"
-  )
+  @CronapiMetaData
   public static Value createValue(String versionDate, String username, String password, String endPoint,
                                   Map<String, String> headers, CreateValueOptions options) {
     Conversation service = new Conversation(versionDate);
@@ -317,10 +251,7 @@ public final class ConversationOperations {
     return service.createValue(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{deleteValueName}}",
-      description = "{{deleteValueDescription}}"
-  )
+  @CronapiMetaData
   public static void deleteValue(String versionDate, String username, String password, String endPoint,
                                  Map<String, String> headers, DeleteValueOptions options) {
     Conversation service = new Conversation(versionDate);
@@ -331,10 +262,7 @@ public final class ConversationOperations {
     service.deleteValue(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{getValueName}}",
-      description = "{{getValueDescription}}"
-  )
+  @CronapiMetaData
   public static ValueExport getValue(String versionDate, String username, String password, String endPoint,
                                      Map<String, String> headers, GetValueOptions options) {
     Conversation service = new Conversation(versionDate);
@@ -345,10 +273,7 @@ public final class ConversationOperations {
     return service.getValue(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{listValuesName}}",
-      description = "{{listValuesDescription}}"
-  )
+  @CronapiMetaData
   public static ValueCollection listValues(String versionDate, String username, String password, String endPoint,
                                            Map<String, String> headers, ListValuesOptions options) {
     Conversation service = new Conversation(versionDate);
@@ -359,10 +284,7 @@ public final class ConversationOperations {
     return service.listValues(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{updateValueName}}",
-      description = "{{updateValueDescription}}"
-  )
+  @CronapiMetaData
   public static Value updateValue(String versionDate, String username, String password, String endPoint,
                                   Map<String, String> headers, UpdateValueOptions options) {
     Conversation service = new Conversation(versionDate);
@@ -373,10 +295,7 @@ public final class ConversationOperations {
     return service.updateValue(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{createSynonymName}}",
-      description = "{{createSynonymDescription}}"
-  )
+  @CronapiMetaData
   public static Synonym createSynonym(String versionDate, String username, String password, String endPoint,
                                       Map<String, String> headers, CreateSynonymOptions options) {
     Conversation service = new Conversation(versionDate);
@@ -387,10 +306,7 @@ public final class ConversationOperations {
     return service.createSynonym(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{deleteSynonymName}}",
-      description = "{{deleteSynonymDescription}}"
-  )
+  @CronapiMetaData
   public static void deleteSynonym(String versionDate, String username, String password, String endPoint,
                                    Map<String, String> headers, DeleteSynonymOptions options) {
     Conversation service = new Conversation(versionDate);
@@ -401,10 +317,7 @@ public final class ConversationOperations {
     service.deleteSynonym(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{getSynonymName}}",
-      description = "{{getSynonymDescription}}"
-  )
+  @CronapiMetaData
   public static Synonym getSynonym(String versionDate, String username, String password, String endPoint,
                                    Map<String, String> headers, GetSynonymOptions options) {
     Conversation service = new Conversation(versionDate);
@@ -415,10 +328,7 @@ public final class ConversationOperations {
     return service.getSynonym(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{listSynonymsName}}",
-      description = "{{listSynonymsDescription}}"
-  )
+  @CronapiMetaData
   public static SynonymCollection listSynonyms(String versionDate, String username, String password, String endPoint,
                                                Map<String, String> headers, ListSynonymsOptions options) {
     Conversation service = new Conversation(versionDate);
@@ -429,10 +339,7 @@ public final class ConversationOperations {
     return service.listSynonyms(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{updateSynonymName}}",
-      description = "{{updateSynonymDescription}}"
-  )
+  @CronapiMetaData
   public static Synonym updateSynonym(String versionDate, String username, String password, String endPoint,
                                       Map<String, String> headers, UpdateSynonymOptions options) {
     Conversation service = new Conversation(versionDate);
@@ -443,10 +350,7 @@ public final class ConversationOperations {
     return service.updateSynonym(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{createDialogNodeName}}",
-      description = "{{createDialogNodeDescription}}"
-  )
+  @CronapiMetaData
   public static DialogNode createDialogNode(String versionDate, String username, String password, String endPoint,
                                             Map<String, String> headers, CreateDialogNodeOptions options) {
     Conversation service = new Conversation(versionDate);
@@ -457,10 +361,7 @@ public final class ConversationOperations {
     return service.createDialogNode(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{deleteDialogNodeName}}",
-      description = "{{deleteDialogNodeDescription}}"
-  )
+  @CronapiMetaData
   public static Void deleteDialogNode(String versionDate, String username, String password, String endPoint,
                                       Map<String, String> headers, DeleteDialogNodeOptions options) {
     Conversation service = new Conversation(versionDate);
@@ -471,10 +372,7 @@ public final class ConversationOperations {
     return service.deleteDialogNode(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{getDialogNodeName}}",
-      description = "{{getDialogNodeDescription}}"
-  )
+  @CronapiMetaData
   public static DialogNode getDialogNode(String versionDate, String username, String password, String endPoint,
                                          Map<String, String> headers, GetDialogNodeOptions options) {
     Conversation service = new Conversation(versionDate);
@@ -485,10 +383,7 @@ public final class ConversationOperations {
     return service.getDialogNode(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{listDialogNodesName}}",
-      description = "{{listDialogNodesDescription}}"
-  )
+  @CronapiMetaData
   public static DialogNodeCollection listDialogNodes(String versionDate, String username, String password, String endPoint,
                                                      Map<String, String> headers, ListDialogNodesOptions options) {
     Conversation service = new Conversation(versionDate);
@@ -499,10 +394,7 @@ public final class ConversationOperations {
     return service.listDialogNodes(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{updateDialogNodeName}}",
-      description = "{{updateDialogNodeDescription}}"
-  )
+  @CronapiMetaData
   public static DialogNode updateDialogNode(String versionDate, String username, String password, String endPoint,
                                             Map<String, String> headers, UpdateDialogNodeOptions options) {
     Conversation service = new Conversation(versionDate);
@@ -513,10 +405,7 @@ public final class ConversationOperations {
     return service.updateDialogNode(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{listAllLogsName}}",
-      description = "{{listAllLogsDescription}}"
-  )
+  @CronapiMetaData
   public static LogCollection listAllLogs(String versionDate, String username, String password, String endPoint,
                                           Map<String, String> headers, ListAllLogsOptions options) {
     Conversation service = new Conversation(versionDate);
@@ -527,10 +416,7 @@ public final class ConversationOperations {
     return service.listAllLogs(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{listLogsName}}",
-      description = "{{listLogsDescription}}"
-  )
+  @CronapiMetaData
   public static LogCollection listLogs(String versionDate, String username, String password, String endPoint,
                                        Map<String, String> headers, ListLogsOptions options) {
     Conversation service = new Conversation(versionDate);
@@ -541,10 +427,7 @@ public final class ConversationOperations {
     return service.listLogs(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{createCounterexampleName}}",
-      description = "{{createCounterexampleDescription}}"
-  )
+  @CronapiMetaData
   public static Counterexample createCounterexample(String versionDate, String username, String password, String endPoint,
                                                     Map<String, String> headers, CreateCounterexampleOptions options) {
     Conversation service = new Conversation(versionDate);
@@ -555,10 +438,7 @@ public final class ConversationOperations {
     return service.createCounterexample(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{deleteCounterexampleName}}",
-      description = "{{deleteCounterexampleDescription}}"
-  )
+  @CronapiMetaData
   public static void deleteCounterexample(String versionDate, String username, String password, String endPoint,
                                           Map<String, String> headers, DeleteCounterexampleOptions options) {
     Conversation service = new Conversation(versionDate);
@@ -570,10 +450,7 @@ public final class ConversationOperations {
   }
 
 
-  @CronapiMetaData(
-      name = "{{getCounterexampleName}}",
-      description = "{{getCounterexampleDescription}}"
-  )
+  @CronapiMetaData
   public static Counterexample getCounterexample(String versionDate, String username, String password, String endPoint,
                                                  Map<String, String> headers, GetCounterexampleOptions options) {
 
@@ -585,10 +462,7 @@ public final class ConversationOperations {
     return service.getCounterexample(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{listCounterexamplesName}}",
-      description = "{{listCounterexamplesDescription}}"
-  )
+  @CronapiMetaData
   public static CounterexampleCollection listCounterexamples(String versionDate, String username, String password, String endPoint,
                                                              Map<String, String> headers, ListCounterexamplesOptions options) {
     Conversation service = new Conversation(versionDate);
@@ -599,10 +473,7 @@ public final class ConversationOperations {
     return service.listCounterexamples(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{updateCounterexampleName}}",
-      description = "{{updateCounterexampleDescription}}"
-  )
+  @CronapiMetaData
   public static Counterexample updateCounterexample(String versionDate, String username, String password, String endPoint,
                                                     Map<String, String> headers, UpdateCounterexampleOptions options) {
 
